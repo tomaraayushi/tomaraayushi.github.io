@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Physics background</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                
+                //When answer1 is correct,change color to Blue
+                let correct1 = document.querySelector('#q1c');
+                correct1.addEventListener('click', function(){
+                    correct1.style.backgroundColor ='blue';
+                    document.querySelector('#Response1').innerHTML = 'Correct';
+                });
+
+                //When answer1 is incorrect,change color to red
+                let incorrects1 = document.querySelectorAll('#q1i');
+                for(let i = 0; i < incorrects1.length; i++){
+                    incorrects1[i].addEventListener('click', function() {
+                        incorrects1[i].style.backgroundColor = 'red';
+                        document.querySelector('#Response1').innerHTML = 'Incorrect';
+                    });
+                }
+
+                //When answer2 is correct,change color to Blue
+                let correct2 = document.querySelector('#q2c');
+                correct2.addEventListener('click', function(){
+                    correct2.style.backgroundColor ='blue';
+                    document.querySelector('#Response2').innerHTML = 'Correct';
+                });
+
+                //When answer2 is incorrect,change color to red
+                let incorrects2 = document.querySelectorAll('#q2i');
+                for(let i = 0; i < incorrects2.length; i++){
+                    incorrects2[i].addEventListener('click', function() {
+                        incorrects2[i].style.backgroundColor = 'red';
+                        document.querySelector('#Response2').innerHTML = 'Incorrect';
+                    });
+                }//When answer3 is correct,change color to Blue
+                let correct3 = document.querySelector('#q3c');
+                correct3.addEventListener('click', function(){
+                    correct3.style.backgroundColor ='blue';
+                    document.querySelector('#Response3').innerHTML = 'Correct';
+                });
+
+                //When answer3 is incorrect,change color to red
+                let incorrects3 = document.querySelectorAll('#q3i');
+                for(let i = 0; i < incorrects3.length; i++){
+                    incorrects3[i].addEventListener('click', function() {
+                        incorrects3[i].style.backgroundColor = 'red';
+                        document.querySelector('#Response3').innerHTML = 'Incorrect';
+                    });
+                }//When answer4 is correct,change color to Blue
+                let correct4 = document.querySelector('#q4c');
+                correct4.addEventListener('click', function(){
+                    correct4.style.backgroundColor ='blue';
+                    document.querySelector('#Response4').innerHTML = 'Correct';
+                });
+
+                //When answer4 is incorrect,change color to red
+                let incorrects4 = document.querySelectorAll('#q4i');
+                for(let i = 0; i < incorrects4.length; i++){
+                    incorrects4[i].addEventListener('click', function() {
+                        incorrects4[i].style.backgroundColor = 'red';
+                        document.querySelector('#Response4').innerHTML = 'Incorrect';
+                    });
+                }//When answer5 is correct,change color to Blue
+                let correct5 = document.querySelector('#q5c');
+                correct5.addEventListener('click', function(){
+                    correct5.style.backgroundColor ='blue';
+                    document.querySelector('#Response5').innerHTML = 'Correct';
+                });
+
+                //When answer5 is incorrect,change color to red
+                let incorrects5 = document.querySelectorAll('#q5i');
+                for(let i = 0; i < incorrects5.length; i++){
+                    incorrects5[i].addEventListener('click', function() {
+                        incorrects5[i].style.backgroundColor = 'red';
+                        document.querySelector('#Response5').innerHTML = 'Incorrect';
+                    });
+                }
+            });
+
+        </script>
+
+    </head>
+
+
+    <body>
+        
+        <div class="m-4">
+            <h2>About my Physics background</h2>
+            <p>Well I have done my Masters in Physics and during my masters i also did two projects.</p>
+            <p>Projects i have done in my masters are:
+                <ol class="list">
+                    <li>Plasmonic Materials and Its Applications.
+                        <a href="https://www.researchgate.net/publication/337184786_Elastic_Mechanical_Thermal_and_Ultrasonic_Properties_of_Terbium_Chalcogenides">Here's a link to this research paper.</a>
+                    </li>
+                    <li>Higher Order elastic Constants</li>
+                </ol>
+
+            </p> 
+  
+            <p>I like Quantum Physics the most and always read books and research papers.
+            <br>I always enjoy talking and discussing about Quantum Theory.</p>
+            <h6>It would be really fun if you will also give some thought on this and take a quiz.</h6>
+
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Quiz: Basics of Quantum Physics</h2>
+                <hr>
+                <!--Multiple Choice Questions-->
+                
+                <ol class="questions">
+                    <li>
+                        <p>The quantum mechanical model describes electrons as:</p>
+                        
+                        <button id="q1i" class="Incorrect">Particles</button>
+                        <button id="q1i" class="Incorrect">Waves</button>
+                        <button id="q1c" class="Correct">Particles with wave-like properties</button>
+                        <button id="q1i" class="Incorrect">Small, hard spheres</button>
+                         
+                        <p id='Response1'></p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>There are ___ types of quantum numbers.</p>
+
+                        <button id="q2i" class='Incorrect'>2</button>
+                        <button id="q2c" class='Correct'>4</button>
+                        <button id="q2i" class="Incorrect">7</button>
+                        <button id="q2i" class="Incorrect">5</button>
+
+                        <p id='Response2'></p>
+                    </li>
+                    <br>
+                    
+                    <li id="q3">
+                        <p>The energy emitted by a black surface should not vary in accordance with:</p>
+
+                        <button id="q3i" class="Incorrect">Wavelength</button>
+                        <button id="q3i" class="Incorrect">Temperature</button>
+                        <button id="q3i" class="Incorrect">Surface-characteristics</button>
+                        <button id="q3c" class="Correct">Time</button>
+
+                        <p id='Response3'></p>
+                    </li>
+                    <br>
+                     
+                    <li id="q4">
+                        <p>Rayleigh-Jean's law holds good for which of the following?</p>
+
+                        <button id="q4i" class="Incorrect">Shorter Wavelength</button>
+                        <button id="q4c" class="Correct">Longer Wavelength</button>
+                        <button id="q4i" class="Incorrect">High Temperature</button>
+                        <button id="q4i" class="Incorrect">High Energy</button>
+
+                        <p id='Response4'></p>
+                    </li>
+                    <br>
+
+                    <li id="q5">
+                        <p>Compton shift depends on which of the following?</p>
+
+                        <button id="q5c" class="Correct">Incident radiation</button>
+                        <button id="q5i" class="Incorrect">Nature of scattering substance</button>
+                        <button id="q5i" class="Incorrect">Angle of scattering</button>
+                        <button id="q5i" class="Incorrect">Amplitude of frequency</button>
+                        
+                        <p id='Response5'></p>
+                    </li>
+                    <br><br>
+                
+                </ol>
+                
+            </div>
+        </div>
+        
+
+    </body>
+</html>
